@@ -1,0 +1,19 @@
+{
+  "name": "padosoft-frontend-utils",
+  "version": "1.0.0",
+  "description": "Utils package",
+  "main": "dist/padosoftFrontendUtils.js",
+  "scripts": {
+    "production": "npx webpack --mode=production",
+    "build:dev": "npx webpack --mode=development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "alberto@flatiron.it",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "webpack": "^5.23.0",
+    "webpack-cli": "^4.5.0"
+  }
+}
