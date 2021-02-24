@@ -1,5 +1,5 @@
 export function initDatepicker(id){
-    const el = $('#riga-pagamento-' + id + ' .date-picker');
+    const el = $(id);
     if(el.length > 0) {
         el.flatpickr({
             altInput: true,

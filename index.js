@@ -14,3 +14,5 @@ export * from './includes/scorporoIvaImponibileConCorrezione';
 export * from './includes/scorporoIvaParteImponibile';
 export * from './includes/scorporoIvaParteImposta';
 export * from './includes/zeroOrValue';
+export * from './includes/dateTimeDefaults';
+export * from './includes/toEuroFormatted';

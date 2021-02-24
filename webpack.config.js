@@ -4,8 +4,8 @@ module.exports = {
     entry: './index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'padosoft-frontend-utils.js',
-        library: 'padosoftFrontendUtils',
+        filename: 'padosoft-frontend-tools.js',
+        library: 'padosoftFrontendTools',
         libraryTarget: 'umd',
     },
     externals: {
@@ -15,5 +15,23 @@ module.exports = {
             amd: 'lodash',
             root: '_',
         },
+        jquery: {
+            commonjs: 'jQuery',
+            commonjs2: 'jQuery',
+            amd: 'jQuery',
+            root: '$',
+        },
+        flatpickr: {
+            commonjs: 'flatpickr',
+            commonjs2: 'flatpickr',
+            amd: 'flatpickr',
+            root: 'flatpickr',
+        },
+        luxon: {
+            commonjs: 'luxon',
+            commonjs2: 'luxon',
+            amd: 'luxon',
+            root: 'luxon',
+        }
     },
 };

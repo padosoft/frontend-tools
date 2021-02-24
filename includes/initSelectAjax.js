@@ -1,9 +1,11 @@
 export function initSelectAjax(id) {
-    let el = $(`[name="documenti_dettaglio_tipo_riga_ID[${id}]"],[name="um_ID[${id}]"],[name="iva_ID[${id}]"]`);
+    let el = $(id);
+    console.log("initSelectAjax", el);
     if (el.length < 1) {
         return;
     }
     el.each(function () {
+        console.log("initSelectAjax inner", this);
         var placeholder = $(this).attr('data-placeholder');
         var ajax_url = $(this).attr('data-ajax_url');
         var templateResultFunction = $(this).attr('data-templateResult');
@@ -74,8 +76,8 @@ export function initSelectAjax(id) {
                 return repo.descr;
             } // omitted for brevity, see the source of this page
         });
-        $('[data-submitOnChange]').on("select2:select", function (event) {
+        /* $('[data-submitOnChange]').on("select2:select", function (event) {
             $(event.currentTarget).closest("form").submit();
-        });
+        }); */
     });
 }

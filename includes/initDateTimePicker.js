@@ -1,6 +1,6 @@
 export function initDateTimePicker(id){
     // Questo deve essere rivisto
-    const el = $('#riga-pagamento-' + id + ' .datetime-picker-picker');
+    const el = $(id);
     if(el.length > 0) {
         el.flatpickr({
             enableTime: true,

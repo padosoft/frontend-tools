@@ -1,12 +1,13 @@
 {
-  "name": "padosoft-frontend-utils",
+  "name": "padosoft-frontend-tools",
   "version": "1.0.0",
-  "description": "Utils package",
-  "main": "dist/padosoftFrontendUtils.js",
+  "description": "Tools package",
+  "main": "dist/padosoftFrontendTools.js",
   "scripts": {
     "production": "npx webpack --mode=production",
     "build:dev": "npx webpack --mode=development",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "npx webpack --mode=development --watch",
+    "test": "jest"
   },
   "keywords": [],
   "author": "alberto@flatiron.it",
@@ -15,5 +16,11 @@
     "lodash": "^4.17.21",
     "webpack": "^5.23.0",
     "webpack-cli": "^4.5.0"
+  },
+  "devDependencies": {
+    "flatpickr": "^4.6.9",
+    "jest": "^26.6.3",
+    "luxon": "^1.26.0",
+    "select2": "^4.1.0-rc.0"
   }
 }

@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
+
 <body>
-    Pippo
-    <script src="dist/padosoft-frontend-utils.js"></script>
+    <p>Test</p>
+    <p id="euro-formatted"></p>
+    <select name="select" id="select" data-ajax_url="https://jsonplaceholder.typicode.com/todos/1" style="width: 100%;">
+        <option value="1">Uno</option>
+        <option value="2">Due</option>
+        <option value="3">Tre</option>
+    </select>
+    <input class="date" type="text" name="date" id="date" autocomplete="off" />
+    
+    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@1.26.0/build/global/luxon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.full.min.js"></script>
+    <script src="dist/padosoft-frontend-tools.js"></script>
     <script>
-        console.log("tezt", padosoftFrontendUtils.roundWithDecimal(21345.980978, 4));
+        console.log("altro", padosoftFrontendTools.roundWithDecimal(21345.980978, 4), padosoftFrontendTools.nowDateTime());
+        console.log("euro", 21345.980978, padosoftFrontendTools.toEuroFormatted(21345.980978));
+        $('#euro-formatted').html(padosoftFrontendTools.toEuroFormatted(21345.980978));
+        padosoftFrontendTools.initSelectAjax('#select');
+        padosoftFrontendTools.initTimePicker('#date');
     </script>
 </body>
+
 </html>
