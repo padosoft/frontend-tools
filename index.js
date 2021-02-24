@@ -1,3 +1,5 @@
+// File index che raccolgie tutte le funzioni per esportarle
+
 export * from './includes/calcolaImportoConIva';
 export * from './includes/calcoloIvaDaImponibile';
 export * from './includes/checkAndCorrectImportiModImponibile';
