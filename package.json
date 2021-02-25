@@ -11,7 +11,7 @@
   },
   "keywords": [],
   "author": "alberto@flatiron.it",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "lodash": "^4.17.21",
     "webpack": "^5.23.0",
