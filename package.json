@@ -9,8 +9,10 @@
     "watch": "npx webpack --mode=development --watch",
     "test": "jest"
   },
-  "keywords": [],
-  "author": "alberto@flatiron.it",
+  "keywords": [
+    "javascript"
+  ],
+  "author": "padosoft",
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.17.21",
