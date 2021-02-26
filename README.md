@@ -3,7 +3,7 @@
 Si tratta di un pacchetto javascript di funzioni helpers.
 Per installarlo:
 ```javascript
-npm i padosoft-frontend-tools --save
+npm i @padosoft/frontend-tools --save
 ```
 
 Per utilizzarlo sono possibili i tre approcci commonJS, AMD, o con lo script:
@@ -11,13 +11,13 @@ Per utilizzarlo sono possibili i tre approcci commonJS, AMD, o con lo script:
 CommonJs
 
 ```javascript
-const padosoftFrontendTools = require('padosoft-frontend-tools');
+const padosoftFrontendTools = require("@padosoft/frontend-tools");
 ```
 
 AMD
 
 ```javascript
-import { padosoftFrontendTools } from 'padosoft-frontend-tools';
+import * as padosoftFrontendTools from "@padosoft/frontend-tools";
 ```
 
 Per l'uso da script è consigliabile copiare il file dalla cartella node_modules in una a scelta. Una volta incluso sarà presente un oggetto globale 'padosoftFrontendTools' con il quale richiamare le funzioni.
