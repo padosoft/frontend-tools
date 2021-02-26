@@ -10,9 +10,10 @@
     "test": "jest"
   },
   "keywords": [
-    "javascript"
+    "javascript",
+    "tools"
   ],
-  "author": "padosoft",
+  "author": "theniteowl <alberto@flatiron.it>",
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.17.21",
