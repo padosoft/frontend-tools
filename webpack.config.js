@@ -33,5 +33,11 @@ module.exports = {
       amd: "luxon",
       root: "luxon",
     },
+    axios: {
+      commonjs: "axios",
+      commonjs2: "axio",
+      amd: "axios",
+      root: "axios",
+    },
   },
 };
