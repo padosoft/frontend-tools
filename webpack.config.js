@@ -35,7 +35,7 @@ module.exports = {
     },
     axios: {
       commonjs: "axios",
-      commonjs2: "axio",
+      commonjs2: "axios",
       amd: "axios",
       root: "axios",
     },
