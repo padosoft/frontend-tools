@@ -554,3 +554,219 @@ Valore dell'aliquota. `tipo number`
 ***RETURN***
 
 Un oggetto composto dal: totale, imponibile, imposta. `tipo Object: {totale, imponibile, imposta}`
+
+---
+
+### ***axiosGet(config)***
+
+```javascript
+padosoftFrontendTools.axiosGet(config)
+```
+
+Funzione eseguire una chiamata asincrona con axios e metodo GET.
+
+**config**
+
+Oggetto di configurazione della chiamata. `tipo Object`
+Proprietà dell'oggetto:
+- url: stringa che rappresenta l'url per la chiamata.
+- success: funzione obbligatoria per gestire il success. (response) => {}
+- error: funzione obbligatoria per gestire l'errore. (error) => {}
+- blockUI: default true
+- unBlockUI: default false
+- logOnSuccess: default true
+- logOnError: default true
+- axiosConfig: default {}
+- 
+```javascript
+axiosGet({
+    url: "https://getbootstrap.com",
+    success: (response) => {
+      alert("successo");
+    },
+
+    error: (error) => {
+      alert("errore", error);
+    },
+    blockUI: false,
+  });
+```
+
+***RETURN***
+
+void
+
+---
+
+### ***axiosPost(config)***
+
+```javascript
+padosoftFrontendTools.axiosPost(config)
+```
+
+Funzione eseguire una chiamata asincrona con axios e metodo POST.
+
+**config**
+
+Oggetto di configurazione della chiamata. `tipo Object`
+Proprietà dell'oggetto:
+- url: stringa che rappresenta l'url per la chiamata.
+- data: oggetto con i parametri da passare alla POST.
+- success: funzione obbligatoria per gestire il success. (response) => {}
+- error: funzione obbligatoria per gestire l'errore. (error) => {}
+- blockUI: default true
+- unBlockUI: default false
+- logOnSuccess: default true
+- logOnError: default true
+- axiosConfig: default {}
+- 
+```javascript
+axiosPost({
+    url: "https://getbootstrap.com",
+    data: {
+        nome: 'Mario',
+        cognome: 'Rossi'
+    }
+    success: (response) => {
+      alert("successo");
+    },
+
+    error: (error) => {
+      alert("errore", error);
+    },
+    blockUI: false,
+  });
+```
+
+***RETURN***
+
+void
+---
+
+### ***axiosPatch(config)***
+
+```javascript
+padosoftFrontendTools.axiosPatch(config)
+```
+
+Funzione eseguire una chiamata asincrona con axios e metodo PATCH.
+
+**config**
+
+Oggetto di configurazione della chiamata. `tipo Object`
+Proprietà dell'oggetto:
+- url: stringa che rappresenta l'url per la chiamata.
+- data: oggetto con i parametri da passare alla PATCH.
+- success: funzione obbligatoria per gestire il success. (response) => {}
+- error: funzione obbligatoria per gestire l'errore. (error) => {}
+- blockUI: default true
+- unBlockUI: default false
+- logOnSuccess: default true
+- logOnError: default true
+- axiosConfig: default {}
+- 
+```javascript
+axiosPatch({
+    url: "https://getbootstrap.com",
+    data: {
+        nome: 'Mario',
+        cognome: 'Rossi'
+    }
+    success: (response) => {
+      alert("successo");
+    },
+
+    error: (error) => {
+      alert("errore", error);
+    },
+    blockUI: false,
+  });
+```
+
+***RETURN***
+
+void
+---
+
+### ***axiosPut(config)***
+
+```javascript
+padosoftFrontendTools.axiosPut(config)
+```
+
+Funzione eseguire una chiamata asincrona con axios e metodo PUT.
+
+**config**
+
+Oggetto di configurazione della chiamata. `tipo Object`
+Proprietà dell'oggetto:
+- url: stringa che rappresenta l'url per la chiamata.
+- data: oggetto con i parametri da passare alla PUT.
+- success: funzione obbligatoria per gestire il success. (response) => {}
+- error: funzione obbligatoria per gestire l'errore. (error) => {}
+- blockUI: default true
+- unBlockUI: default false
+- logOnSuccess: default true
+- logOnError: default true
+- axiosConfig: default {}
+- 
+```javascript
+axiosPut({
+    url: "https://getbootstrap.com",
+    data: {
+        nome: 'Mario',
+        cognome: 'Rossi'
+    }
+    success: (response) => {
+      alert("successo");
+    },
+    error: (error) => {
+      alert("errore", error);
+    },
+    blockUI: false,
+  });
+```
+
+***RETURN***
+
+void
+---
+
+### ***axiosDelete(config)***
+
+```javascript
+padosoftFrontendTools.axiosDelete(config)
+```
+
+Funzione eseguire una chiamata asincrona con axios e metodo DELETE.
+
+**config**
+
+Oggetto di configurazione della chiamata. `tipo Object`
+Proprietà dell'oggetto:
+- url: stringa che rappresenta l'url per la chiamata.
+- success: funzione obbligatoria per gestire il success. (response) => {}
+- error: funzione obbligatoria per gestire l'errore. (error) => {}
+- blockUI: default true
+- unBlockUI: default false
+- logOnSuccess: default true
+- logOnError: default true
+- axiosConfig: default {}
+- 
+```javascript
+axiosDelete({
+    url: "https://getbootstrap.com",
+    success: (response) => {
+      alert("successo");
+    },
+
+    error: (error) => {
+      alert("errore", error);
+    },
+    blockUI: false,
+  });
+```
+
+***RETURN***
+
+void
