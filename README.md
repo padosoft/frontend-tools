@@ -20,6 +20,12 @@ AMD
 import * as padosoftFrontendTools from "@padosoft/frontend-tools";
 ```
 
+oppure le singole funzioni.
+
+```javascript
+import { roundDecimalWith, isISODate } from "@padosoft/frontend-tools";
+```
+
 Per l'uso da script è consigliabile copiare il file dalla cartella node_modules in una a scelta. Una volta incluso sarà presente un oggetto globale 'padosoftFrontendTools' con il quale richiamare le funzioni.
 
 ```javascript
