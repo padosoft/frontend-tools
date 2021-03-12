@@ -4,8 +4,8 @@ export function axiosGet(parmsOption) {
   const defaultOption = {
     blockUI: false,
     unBlockUI: false,
-    logOnError: true,
-    logOnSuccess: true,
+    logOnError: false,
+    logOnSuccess: false,
     axiosConfig: {},
   };
 
@@ -58,10 +58,10 @@ export function axiosGet(parmsOption) {
 
 export function axiosPost(parmsOption) {
   const defaultOption = {
-    blockUI: true,
-    unBlockUI: true,
-    logOnError: true,
-    logOnSuccess: true,
+    blockUI: false,
+    unBlockUI: false,
+    logOnError: false,
+    logOnSuccess: false,
     axiosConfig: {},
   };
 
@@ -114,10 +114,10 @@ export function axiosPost(parmsOption) {
 
 export function axiosPut(parmsOption) {
   const defaultOption = {
-    blockUI: true,
-    unBlockUI: true,
-    logOnError: true,
-    logOnSuccess: true,
+    blockUI: false,
+    unBlockUI: false,
+    logOnError: false,
+    logOnSuccess: false,
     axiosConfig: {},
   };
 
@@ -170,10 +170,10 @@ export function axiosPut(parmsOption) {
 
 export function axiosPatch(parmsOption) {
   const defaultOption = {
-    blockUI: true,
-    unBlockUI: true,
-    logOnError: true,
-    logOnSuccess: true,
+    blockUI: false,
+    unBlockUI: false,
+    logOnError: false,
+    logOnSuccess: false,
     axiosConfig: {},
   };
 
@@ -228,8 +228,8 @@ export function axiosDelete(parmsOption) {
   const defaultOption = {
     blockUI: false,
     unBlockUI: false,
-    logOnError: true,
-    logOnSuccess: true,
+    logOnError: false,
+    logOnSuccess: false,
     axiosConfig: {},
   };
 
