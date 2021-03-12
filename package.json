@@ -1,6 +1,6 @@
 {
   "name": "@padosoft/frontend-tools",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Tools package.",
   "main": "dist/padosoft-frontend-tools.js",
   "scripts": {

@@ -51,7 +51,7 @@ export function axiosGet(parmsOption) {
     })
     .finally(() => {
       if (options.unBlockUI) {
-        $.unblockUI();
+        unblockUI();
       }
     });
 }
@@ -107,7 +107,7 @@ export function axiosPost(parmsOption) {
     })
     .finally(() => {
       if (options.unBlockUI) {
-        $.unblockUI();
+        unblockUI();
       }
     });
 }
@@ -163,7 +163,7 @@ export function axiosPut(parmsOption) {
     })
     .finally(() => {
       if (options.unBlockUI) {
-        $.unblockUI();
+        unblockUI();
       }
     });
 }
@@ -219,7 +219,7 @@ export function axiosPatch(parmsOption) {
     })
     .finally(() => {
       if (options.unBlockUI) {
-        $.unblockUI();
+        unblockUI();
       }
     });
 }
@@ -275,7 +275,7 @@ export function axiosDelete(parmsOption) {
     })
     .finally(() => {
       if (options.unBlockUI) {
-        $.unblockUI();
+        unblockUI();
       }
     });
 }
